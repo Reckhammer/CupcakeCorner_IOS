@@ -12,6 +12,7 @@
 		B85423DF2BD1D50B00059583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85423DE2BD1D50B00059583 /* Assets.xcassets */; };
 		B85423E22BD1D50B00059583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85423E12BD1D50B00059583 /* Preview Assets.xcassets */; };
 		B85423E92BD1D8D600059583 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85423E82BD1D8D600059583 /* Response.swift */; };
+		B85423EB2BD1E07D00059583 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85423EA2BD1E07D00059583 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		B85423DE2BD1D50B00059583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B85423E12BD1D50B00059583 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B85423E82BD1D8D600059583 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		B85423EA2BD1E07D00059583 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				B85423DA2BD1D50A00059583 /* CupcakeCornerApp.swift */,
 				B85423DC2BD1D50A00059583 /* ContentView.swift */,
 				B85423E82BD1D8D600059583 /* Response.swift */,
+				B85423EA2BD1E07D00059583 /* User.swift */,
 				B85423DE2BD1D50B00059583 /* Assets.xcassets */,
 				B85423E02BD1D50B00059583 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85423EB2BD1E07D00059583 /* User.swift in Sources */,
 				B85423DD2BD1D50A00059583 /* ContentView.swift in Sources */,
 				B85423E92BD1D8D600059583 /* Response.swift in Sources */,
 				B85423DB2BD1D50A00059583 /* CupcakeCornerApp.swift in Sources */,

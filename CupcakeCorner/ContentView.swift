@@ -21,53 +21,58 @@ struct ContentView: View
     
     var body: some View
     {
-        Form
+        VStack
         {
-            Section
-            {
-                TextField("Username", text: $username);
-                TextField("Email", text: $email);
-            }
+            Button("Encode User", action: encodeUser);
             
-            Section
+            Form
             {
-                Button("Create Account")
+                Section
                 {
-                    print("Creating account...");
+                    TextField("Username", text: $username);
+                    TextField("Email", text: $email);
                 }
+                
+                Section
+                {
+                    Button("Create Account")
+                    {
+                        print("Creating account...");
+                    }
+                }
+                .disabled(disableForm);
             }
-            .disabled(disableForm);
-        }
-        
-        List(results, id: \.trackId)
-        {   item in
             
-            VStack(alignment: .leading)
-            {
-                AsyncImage(url: URL(string: "https://hws.dev/img/bad.png"))
-                { phase in
-                    if let image = phase.image
-                    {
-                        image
-                            .resizable()
-                            .scaledToFit();
+            List(results, id: \.trackId)
+            {   item in
+                
+                VStack(alignment: .leading)
+                {
+                    AsyncImage(url: URL(string: "https://hws.dev/img/bad.png"))
+                    { phase in
+                        if let image = phase.image
+                        {
+                            image
+                                .resizable()
+                                .scaledToFit();
+                        }
+                        else if phase.error != nil
+                        {
+                            Text("There was an error loading the image.");
+                        }
+                        else
+                        {
+                            ProgressView();
+                        }
                     }
-                    else if phase.error != nil
-                    {
-                        Text("There was an error loading the image.");
-                    }
-                    else
-                    {
-                        ProgressView();
-                    }
+                    Text(item.trackName)
+                        .font(.headline);
+                    Text(item.collectionName);
                 }
-                Text(item.trackName)
-                    .font(.headline);
-                Text(item.collectionName);
             }
-        }
-        .task {
-            await loadData();
+            .task {
+                await loadData();
+            }
         }
     }
     
@@ -91,6 +96,13 @@ struct ContentView: View
         {
             print("Invalid data");
         }
+    }
+    
+    func encodeUser()
+    {
+        let data = try! JSONEncoder().encode(User());
+        let str = String(decoding: data, as: UTF8.self);
+        print(str);
     }
 }
 
