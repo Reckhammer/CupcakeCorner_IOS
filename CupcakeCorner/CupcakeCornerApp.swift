@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct CupcakeCornerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct CupcakeCornerApp: App 
+{
+    var body: some Scene 
+    {
+        WindowGroup 
+        {
+            CupcakeContentView()
         }
     }
 }
