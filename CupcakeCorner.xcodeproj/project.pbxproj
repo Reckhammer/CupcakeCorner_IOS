@@ -16,6 +16,7 @@
 		B85423ED2BD1E67300059583 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85423EC2BD1E67300059583 /* Order.swift */; };
 		B85423EF2BD1E6E400059583 /* CupcakeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85423EE2BD1E6E400059583 /* CupcakeContentView.swift */; };
 		B85423F52BD1E98B00059583 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85423F42BD1E98B00059583 /* AddressView.swift */; };
+		B85423F72BD1EAF000059583 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85423F62BD1EAF000059583 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		B85423EC2BD1E67300059583 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		B85423EE2BD1E6E400059583 /* CupcakeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeContentView.swift; sourceTree = "<group>"; };
 		B85423F42BD1E98B00059583 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		B85423F62BD1EAF000059583 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				B85423EE2BD1E6E400059583 /* CupcakeContentView.swift */,
 				B85423DC2BD1D50A00059583 /* ContentView.swift */,
 				B85423F42BD1E98B00059583 /* AddressView.swift */,
+				B85423F62BD1EAF000059583 /* CheckoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				B85423ED2BD1E67300059583 /* Order.swift in Sources */,
 				B85423E92BD1D8D600059583 /* Response.swift in Sources */,
 				B85423DB2BD1D50A00059583 /* CupcakeCornerApp.swift in Sources */,
+				B85423F72BD1EAF000059583 /* CheckoutView.swift in Sources */,
 				B85423EF2BD1E6E400059583 /* CupcakeContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
